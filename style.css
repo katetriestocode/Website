@@ -1,5 +1,12 @@
-body {
-    font-family: helvetica;
+    @font-face {
+    font-family: 'Helvetica2';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica'), url('Helvetica.woff') format('woff');
+    }
+    
+    body {
+    font-family: Helvetica, Helvetica2;
     background-color: #718355;
     color: #ea9ba2;
     margin-left: 20%;
@@ -16,6 +23,11 @@ h1 {
 p {
     color: #f8dfe1;
     font-weight: 200;
+}
+
+p a {
+    color: inherit;
+    text-decoration: underline;
 }
 
 h3 {
@@ -57,7 +69,6 @@ nav a {
     color: #f8dfe1;
     text-decoration: none;
     font-weight: 200;
-    opacity: 0.85;
     transition: opacity 0.2s;
 }
 
@@ -68,4 +79,21 @@ nav a:hover {
 nav a svg {
     width: 0.7em;
     height: 0.7em;
+}
+
+
+
+
+.contact p {
+  margin: 0 0 0.5rem;
+}
+
+.contact nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.contact a {
+  color: #f8dfe1;
+  text-decoration: underline;
 }
